@@ -20,4 +20,5 @@ urlpatterns = [
     # NEW PATH : path('<appname>/', include('<appname>.urls', namespace="<appname>")),
     path('ghApp/', include('ghApp.urls', namespace="ghApp")),
     path('admin/', admin.site.urls),
+    path('authen/', include('authentication.urls'))
 ]
